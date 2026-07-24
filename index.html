@@ -4,17 +4,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Garora Web Design - TUM IT Student</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garora Web Design | TUM IT Student</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Segoe UI', Arial; background:#ffffff; color:#1e293b; }
+    .header { background: linear-gradient(135deg, #2563eb 0%, #16a34a 100%); color:white; padding:60px 20px; text-align:center; }
+    .logo { width:110px; margin-bottom:20px; border-radius:12px; }
+    h1 { font-size:32px; margin-bottom:10px; }
+    .subtitle { font-size:16px; opacity:0.9; }
+    .container { max-width:700px; margin:auto; padding:50px 20px; text-align:center; }
+    .price { font-size:36px; color:#2563eb; font-weight:800; margin:15px 0; }
+    .features { display:flex; gap:15px; justify-content:center; flex-wrap:wrap; margin:25px 0; }
+    .feature { background:#eff6ff; color:#2563eb; padding:10px 18px; border-radius:20px; font-size:14px; font-weight:600; }
+    .btn { background:#16a34a; color:white; padding:16px 32px; text-decoration:none; border-radius:10px; font-weight:700; font-size:16px; display:inline-block; box-shadow:0 4px 14px rgba(22,163,74,0.3); }
+  </style>
 </head>
-<body style="font-family:Arial; text-align:center; padding:40px;">
-  <h1>Garora Web Design</h1>
-  <p><b>TUM IT Student | Govt Sponsored</b></p>
-  <p>Professional Websites in 3 Days From 15,000 KES</p>
-  <p>Mobile Friendly | Fast | Contact Form | Secure</p>
-  <a href="https://wa.me/254703900228" style="background:green; color:white; padding:10px 20px; text-decoration:none; border-radius:5px;">
-    Order on WhatsApp
-  </a>
-  <p>Portfolio Coming Soon - Your business could be here</p>
+<body>
+  <div class="header">
+    <img src="logo.png" alt="Garora Web Design" class="logo">
+    <h1>Garora Web Design</h1>
+    <p class="subtitle">TUM IT Student | Govt Sponsored</p>
+  </div>
+
+  <div class="container">
+    <h2>Professional Websites Delivered in 3 Days</h2>
+    <p class="price">From 15,000 KES</p>
+    
+    <div class="features">
+      <span class="feature">Mobile Friendly</span>
+      <span class="feature">Fast Loading</span>
+      <span class="feature">Contact Form</span>
+      <span class="feature">Secure</span>
+    </div>
+
+    <a href="https://wa.me/254703900228" class="btn">Order on WhatsApp</a>
+    
+    <h3 style="margin-top:50px;">Portfolio Coming Soon</h3>
+    <p>Your business could be the first one here</p>
+  </div>
 </body>
 </html>
 ```
+
