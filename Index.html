@@ -1,12 +1,13 @@
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Golden Fork - Restaurant & Catering</title>
+  <title>Golden Fork - Restaurant & Catering | Garora Portfolio</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; scroll-behavior: smooth; }
     body { background: #fffaf0; color: #333; }
     
     header {
@@ -17,6 +18,7 @@
     }
     header h1 { font-size: 3rem; color: #FFD700; }
     header p { font-size: 1.2rem; margin-top: 10px; }
+    .btn-group { margin-top: 25px; }
     .btn { 
       display: inline-block; 
       background: #FFD700; 
@@ -24,12 +26,24 @@
       padding: 12px 30px; 
       border-radius: 25px; 
       text-decoration: none; 
-      margin-top: 20px; 
+      margin: 5px;
       font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #fff; }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid #FFD700;
+      color: #FFD700;
+    }
+    .btn-outline:hover {
+      background: #FFD700;
+      color: #000;
     }
     
-    nav { background: #222; padding: 15px; text-align: center; position: sticky; top: 0; }
+    nav { background: #222; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 100; }
     nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+    nav a:hover { color: #FFD700; }
     
     section { padding: 60px 20px; max-width: 1100px; margin: auto; }
     h2 { text-align: center; color: #D4AF37; margin-bottom: 30px; font-size: 2rem; }
@@ -45,7 +59,9 @@
       padding: 20px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       text-align: center;
+      transition: 0.3s;
     }
+    .menu-item:hover { transform: translateY(-5px); }
     .menu-item h3 { color: #D4AF37; }
     .price { font-weight: bold; color: #222; margin-top: 10px; }
     
@@ -67,6 +83,7 @@
     
     @media(max-width: 768px){
       header h1 { font-size: 2rem; }
+      nav a { margin: 0 8px; font-size: 0.9rem; }
     }
   </style>
 </head>
@@ -77,12 +94,16 @@
     <a href="#menu">Menu</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
+    <a href="#portfolio">Portfolio</a>
   </nav>
 
   <header id="home">
     <h1>Golden Fork</h1>
     <p>Taste the Gold. Feel the Flavor.</p>
-    <a href="#menu" class="btn">View Our Menu</a>
+    <div class="btn-group">
+      <a href="#menu" class="btn">View Menu</a>
+      <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
+    </div>
   </header>
 
   <section id="about">
@@ -119,18 +140,27 @@
     </div>
   </section>
 
+  <section id="portfolio">
+    <h2>My Portfolio</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      This Golden Fork website was designed and developed by <b>Fabian - Garora Web Solutions</b>. 
+      I build fast, mobile-friendly websites for restaurants and businesses in Kenya.
+      <br><br>
+      <a href="mailto:your.email@gmail.com" class="btn">Hire Me</a>
+    </p>
+  </section>
+
   <section id="contact">
     <h2>Order Now</h2>
     <p style="text-align:center;">Call us or WhatsApp to place your order</p>
     <div style="text-align:center;">
-      <a href="https://wa.me/2547XXXXXXXX" class="contact-btn">WhatsApp: 07XX XXX</a>
+      <a href="https://wa.me/2547XXXXXXXX" class="contact-btn">WhatsApp: 07XX XXX XXX</a>
       <p style="margin-top:15px;">Location: Bumburia, Nyanza Province</p>
     </div>
   </section>
 
   <footer>
-    <p>© 2026 Golden Fork Restaurant. All Rights Reserved.</p>
-    <p>Designed by Fabian - Garora Web Solutions</p>
+    <p>© 2026 Golden Fork Restaurant. Designed by Fabian - Garora Web Solutions</p>
   </footer>
 
 </body>
