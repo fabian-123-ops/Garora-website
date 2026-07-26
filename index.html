@@ -1,167 +1,70 @@
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Golden Fork - Restaurant & Catering | Garora Portfolio</title>
+  <title>Golden Fork - Restaurant & Catering</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; scroll-behavior: smooth; }
-    body { background: #fffaf0; color: #333; }
-    
-    header {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200') center/cover;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; scroll-behavior: smooth; }
+    body { background: #fffaf0; }
+    header { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200') center/cover; color: white; text-align: center; padding: 100px 20px; }
     header h1 { font-size: 3rem; color: #FFD700; }
-    header p { font-size: 1.2rem; margin-top: 10px; }
-    .btn-group { margin-top: 25px; }
-    .btn { 
-      display: inline-block; 
-      background: #FFD700; 
-      color: #000; 
-      padding: 12px 30px; 
-      border-radius: 25px; 
-      text-decoration: none; 
-      margin: 5px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .btn:hover { background: #fff; }
-    .btn-outline {
-      background: transparent;
-      border: 2px solid #FFD700;
-      color: #FFD700;
-    }
-    .btn-outline:hover {
-      background: #FFD700;
-      color: #000;
-    }
-    
-    nav { background: #222; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 100; }
+    .btn { display: inline-block; background: #FFD700; color: #000; padding: 12px 30px; border-radius: 25px; text-decoration: none; margin: 10px; font-weight: bold; }
+    nav { background: #222; padding: 15px; text-align: center; position: sticky; top: 0; }
     nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
-    nav a:hover { color: #FFD700; }
-    
     section { padding: 60px 20px; max-width: 1100px; margin: auto; }
-    h2 { text-align: center; color: #D4AF37; margin-bottom: 30px; font-size: 2rem; }
-    
-    .menu-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .menu-item {
-      background: white;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: 0.3s;
-    }
-    .menu-item:hover { transform: translateY(-5px); }
-    .menu-item h3 { color: #D4AF37; }
-    .price { font-weight: bold; color: #222; margin-top: 10px; }
-    
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-    }
-    .contact-btn {
-      background: #25D366;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 20px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-    
-    @media(max-width: 768px){
-      header h1 { font-size: 2rem; }
-      nav a { margin: 0 8px; font-size: 0.9rem; }
-    }
+    h2 { text-align: center; color: #D4AF37; margin-bottom: 30px; }
+    .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .menu-item { background: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; }
+    .contact-btn { background: #25D366; color: white; padding: 12px 25px; border-radius: 25px; text-decoration: none; font-weight: bold; }
+    footer { background: #222; color: white; text-align: center; padding: 30px; }
   </style>
 </head>
 <body>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#menu">Menu</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <a href="#portfolio">Portfolio</a>
-  </nav>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#menu">Menu</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <header id="home">
-    <h1>Golden Fork</h1>
-    <p>Taste the Gold. Feel the Flavor.</p>
-    <div class="btn-group">
-      <a href="#menu" class="btn">View Menu</a>
-      <a href="#portfolio" class="btn btn-outline">View Portfolio</a>
-    </div>
-  </header>
+<header id="home">
+  <h1>Golden Fork</h1>
+  <p>Taste the Gold. Feel the Flavor.</p>
+  <a href="#menu" class="btn">View Menu</a>
+  <a href="#contact" class="btn">Order Now</a>
+</header>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p style="text-align:center; max-width:700px; margin:auto;">
-      Welcome to Golden Fork! We serve delicious meals made with fresh ingredients and lots of love. 
-      From everyday meals to catering for events, we bring gold to your table.
-    </p>
-  </section>
+<section id="about">
+  <h2>About Us</h2>
+  <p style="text-align:center;">Welcome to Golden Fork! We serve delicious meals made with fresh ingredients and lots of love. From everyday meals to catering for events.</p>
+</section>
 
-  <section id="menu">
-    <h2>Our Specials</h2>
-    <div class="menu-grid">
-      <div class="menu-item">
-        <h3>Golden Pilau</h3>
-        <p>Aromatic rice cooked with spices and meat</p>
-        <p class="price">KSh 350</p>
-      </div>
-      <div class="menu-item">
-        <h3>Grilled Chicken</h3>
-        <p>Served with fries and salad</p>
-        <p class="price">KSh 600</p>
-      </div>
-      <div class="menu-item">
-        <h3>Beef Stew + Ugali</h3>
-        <p>Home style meal</p>
-        <p class="price">KSh 300</p>
-      </div>
-      <div class="menu-item">
-        <h3>Fresh Juice</h3>
-        <p>Mango, Passion, Pineapple</p>
-        <p class="price">KSh 150</p>
-      </div>
-    </div>
-  </section>
+<section id="menu">
+  <h2>Our Specials</h2>
+  <div class="menu-grid">
+    <div class="menu-item"><h3>Golden Pilau</h3><p>Aromatic rice with meat</p><p><b>KSh 350</b></p></div>
+    <div class="menu-item"><h3>Grilled Chicken</h3><p>Served with fries and salad</p><p><b>KSh 600</b></p></div>
+    <div class="menu-item"><h3>Beef Stew + Ugali</h3><p>Home style meal</p><p><b>KSh 300</b></p></div>
+    <div class="menu-item"><h3>Fresh Juice</h3><p>Mango, Passion, Pineapple</p><p><b>KSh 150</b></p></div>
+  </div>
+</section>
 
-  <section id="portfolio">
-    <h2>My Portfolio</h2>
-    <p style="text-align:center; max-width:700px; margin:auto;">
-      This Golden Fork website was designed and developed by <b>Fabian - Garora Web Solutions</b>. 
-      I build fast, mobile-friendly websites for restaurants and businesses in Kenya.
-      <br><br>
-      <a href="https://wa.me/254703900228" class="btn">Hire Me on WhatsApp</a>
-    </p>
-  </section>
+<section id="contact">
+  <h2>Order Now</h2>
+  <p style="text-align:center;">Call us or WhatsApp to place your order</p>
+  <div style="text-align:center; margin-top:15px;">
+    <a href="https://wa.me/254703900228" class="contact-btn">WhatsApp: 0703 900 228</a>
+    <p style="margin-top:15px;">Location: Bumburia, Nyanza Province</p>
+  </div>
+</section>
 
-  <section id="contact">
-    <h2>Order Now</h2>
-    <p style="text-align:center;">Call us or WhatsApp to place your order</p>
-    <div style="text-align:center;">
-      <a href="https://wa.me/254703900228" class="contact-btn">WhatsApp: 0703 900 228</a>
-      <p style="margin-top:15px;">Location: Bumburia, Nyanza Province</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2026 Golden Fork Restaurant. Designed by Fabian - Garora Web Solutions</p>
-  </footer>
+<footer>
+  <p>© 2026 Golden Fork. Designed by Fabian - Garora Web Solutions</p>
+</footer>
 
 </body>
 </html>
